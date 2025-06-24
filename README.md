@@ -8,6 +8,10 @@ comparisons between observed and simulated data points are frequently employed a
 
 ## Overview of work
 
+<p>
+\( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+</p>
+
 
 
 
