@@ -37,10 +37,10 @@ These examples show how ABC can recover posterior distributions even when likeli
 Two real-world datasets are analyzed using ABC rejection sampling:
 
 - **Case Study I: LCD-TV Adoption Data**  
-  The Gompertz model is fitted to cumulative LCD-TV sales data from Taiwan (2003–2007). ABC is used to estimate growth and saturation rates, demonstrating excellent agreement between model and data.
+  The Gompertz model is fitted to cumulative LCD-TV sales data from Taiwan (2003–2007)[Trappey & Wu, 2008]. ABC is used to estimate growth and saturation rates, demonstrating excellent agreement between model and data.
 
 - **Case Study II: Horse and Mule Populations in the U.S.**  
-  A time-varying logistic model is applied to historical population data of horses and mules on U.S. farms (1865–1960). ABC estimates parameters of a dynamic carrying capacity model, showing how ABC adapts to nonstationary real-world data.
+  A time-varying logistic model is applied to historical population data of horses and mules on U.S. farms (1865–1960)[Banks, 1994]. ABC estimates parameters of a dynamic carrying capacity model, showing how ABC adapts to nonstationary real-world data.
 
 ---
 
