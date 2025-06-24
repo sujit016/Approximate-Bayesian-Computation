@@ -46,7 +46,7 @@ Two real-world datasets are analyzed using ABC rejection sampling:
 
 ## Significance of the Work
 
-This work demonstrates the implementation of ABC rejection algorithms for both synthetic and empirical datasets using the Julia programming language. All examples are executed using the `GpABC.jl` package and structured to support reproducibility.
+This work demonstrates the implementation of ABC rejection algorithms for both synthetic and empirical datasets using the Julia programming language. All examples are executed using the `GpABC.jl`[Tankhilevich et al., 2020] package and structured to support reproducibility.
 
 By combining theoretical foundations with practical applications, this repository provides a computational toolkit for researchers dealing with models where likelihood-based inference is not feasible. It also serves as a learning resource for statisticians, computational biologists, and engineers working with complex simulation-based models.
 
@@ -58,4 +58,5 @@ By combining theoretical foundations with practical applications, this repositor
 2. Pritchard, J. K., Seielstad, M. T., Perez-Lezaun, A., & Feldman, M. W. (1999). Population growth of human Y chromosomes: A study of Y chromosome microsatellites. *Molecular Biology and Evolution*, 16(12), 1791–1798. https://doi.org/10.1093/oxfordjournals.molbev.a026091  
 3. Trappey, C. V., & Wu, H.-Y. (2008). An evaluation of the time-varying extended logistic, simple logistic, and Gompertz models for forecasting short product lifecycles. *Advanced Engineering Informatics*, 22(4), 421–430. https://doi.org/10.1016/j.aei.2008.05.007  
 4. Banks, R. B. (1994). *Growth and Diffusion Phenomena: Mathematical Frameworks and Applications*. Springer.  
-5. Toni, T., Welch, D., Strelkowa, N., Ipsen, A., & Stumpf, M. P. H. (2009). Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems. *Journal of The Royal Society Interface*, 6(31), 187–202. https://doi.org/10.1098/rsif.2008.0172  
+5. Toni, T., Welch, D., Strelkowa, N., Ipsen, A., & Stumpf, M. P. H. (2009). Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems. *Journal of The Royal Society Interface*, 6(31), 187–202. https://doi.org/10.1098/rsif.2008.0172
+6. Tankhilevich, E., Ish-Horowicz, J., Hameed, T., Roesch, E., Kleijn, I., Stumpf, M. P. H., & He, F. (2020). GpABC: A Julia package for approximate Bayesian computation with Gaussian process emulation. Bioinformatics, 36(10), 3286–3287. https://doi.org/10.1093/bioinformatics/btaa078
