@@ -50,6 +50,9 @@ Two real-world datasets are analyzed using ABC rejection sampling:
 - **Case Study II: Horse and Mule Populations in the U.S.**  
   A time-varying logistic model is applied to historical population data of horses and mules on U.S. farms (1865–1960)[Banks, 1994]. ABC estimates parameters of a dynamic carrying capacity model, showing how ABC adapts to nonstationary real-world data.
 
+  <img width="1280" height="720" alt="Presentation1" src="https://github.com/user-attachments/assets/3f379d83-f2e6-4549-bae9-4dc74e58892b" />
+
+
 ---
 
 ## Significance of the Work
