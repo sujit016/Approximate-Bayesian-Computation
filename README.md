@@ -1,4 +1,11 @@
  # Approximate Bayesian Computation
+ ##### <center>Sujit Sandipan Chaugule<sup>1</sup>, Dr. Amiya Ranjan Bhowmick<sup>2</sup></center>, <center>Dipali Vasudev Mestry<sup>2</sup>
+
+<div style="text-align: justify;">
+<sup>1</sup>Department of Pharmaceutical Sciences and Technology, Institute of Chemical Technology, Mumbai
+
+<sup>2</sup>Department of Mathematics, Institute of Chemical Technology, Mumbai  
+</div>
 
 Approximate Bayesian Computation (ABC) is a class of likelihood-free inference methods used when the likelihood function is either unavailable or computationally expensive to evaluate. Instead of computing likelihoods explicitly, ABC infers posterior distributions by simulating data from the model and comparing it to observed data using distance metrics or summary statistics.
 
