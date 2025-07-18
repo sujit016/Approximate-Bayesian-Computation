@@ -175,10 +175,9 @@ mean_traj = mapslices(mean, trajectory_matrix; dims=1)[:]
  
 
 # Plot mean trajectory
-Plots.plot(t_obs, mean_traj, label="", lw=2, color=:blue)
+Plots.plot(t_obs, mean_traj, label="", lw=2, color="blue")
 
 # Plot 95% prediction band  
 plt = Plots.plot!(t_obs, mean_traj, ribbon=(mean_traj .- lower, upper .- mean_traj),
       fillalpha=0.3, label="", color= "gray", linealpha=0)
 Plots.scatter!(t_obs, x_obs, label="", color="red", marker=:circle)
-
