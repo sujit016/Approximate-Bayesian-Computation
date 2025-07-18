@@ -46,7 +46,7 @@ Two real-world datasets are analyzed using ABC rejection sampling:
 
 ## Significance of the Work
 
-This work demonstrates the implementation of ABC rejection algorithms for both synthetic and empirical datasets using the Julia programming language. All examples are executed using the `GpABC.jl`[Tankhilevich et al., 2020] package and structured to support reproducibility.
+This work demonstrates the implementation of ABC rejection algorithms for both synthetic and empirical datasets using the Julia programming language. All case studies are executed using the `GpABC.jl`[Tankhilevich et al., 2020] package and structured to support reproducibility.
 
 By combining theoretical foundations with practical applications, this repository provides a computational toolkit for researchers dealing with models where likelihood-based inference is not feasible. It also serves as a learning resource for statisticians, computational biologists, and engineers working with complex simulation-based models.
 
