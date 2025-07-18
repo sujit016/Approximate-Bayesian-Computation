@@ -1,3 +1,9 @@
+# We scrutinize temporal series data indicative of the quantity of horses and mules on United States agricultural establishments for the time interval 1865 – 1960. 
+# The data, initially documented by Banks  [(Banks, 1994) (Chapter 5)]
+
+# The dataset includes population size measurements collected every five years, resulting in a total of 20 observations. 
+# The data show an initial population growth followed by a decline, which is typical of logistic-like behaviour with changing saturation levels over time.
+
 using Random
 Random.seed!(123)  # for reproducibility
 
@@ -19,6 +25,8 @@ function logistic_carrying!(du, u, p, t)
     du[1] = a0 * u[1] * (1 - u[1] / (Nstar0 * (1 + c * t)))
 end
 
+# We treated the initial population size N_0 as an unknown parameter and included it alongside the other model parameters 
+# while implementing the ABC framework for the model
 # Simulator function with initial condition as a parameter
 function simulator(var_params)
     a0, Nstar0, c, u0_val = var_params
