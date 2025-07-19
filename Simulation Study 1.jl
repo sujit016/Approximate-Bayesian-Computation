@@ -15,10 +15,9 @@ first(Y_E, 6)  # first 6 values
 prior_mu() = rand(Uniform(-4,4))
 prior_sigma() = rand(Uniform(0.0001,3))
 
-# prior distributions for mu and sigma
-prior_mu() = rand(Uniform(-4,4))
-prior_sigma() = rand(Uniform(0.0001,3))
-
+# functions for simulating the data
+simulate_data(length_data, mu, sigma) = rand(Normal(mu, sigma),length_data)
+compute_quantiles(data) = quantile(data, [0.1,0.5, 0.9])
 
 # Distance Function
 function D(true_data, simulated_data)
