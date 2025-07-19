@@ -81,9 +81,9 @@ for i in eachindex(t)
     fitted_vals[i] = mean(post_K) / (((mean(post_K) - N0)/N0) * exp(-mean(post_r) * t[i]) + 1)
 end
 
-plt = plot(t, N_obs, seriestype = :scatter, label = "Simulated data", color = :red,
+plt = plot(t, N_obs, seriestype = :scatter, label = "Simulated data", color = "red",
     xlabel = "Time", ylabel = "Population size")
-plot!(t, fitted_vals, label = "Fitted curve", lw = 3, color = :blue)
+plot!(t, fitted_vals, label = "Fitted curve", lw = 3, color = "blue")
 
 # Acceptance rate
 acceptance_rate = length(post_r) / iter
