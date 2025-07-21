@@ -82,7 +82,6 @@ using DataFrames, CairoMakie, LaTeXStrings
 
 posterior_samples = sim_result.population
 
-# Create DataFrame with nice parameter names (as best possible in code)
 df = DataFrame(
     a₀ = posterior_samples[:, 1],
     Nstar₀ = posterior_samples[:, 2],
