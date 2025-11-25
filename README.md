@@ -52,7 +52,7 @@ Two real-world datasets are analyzed using ABC rejection sampling:
 
  <img width="1280" height="720" alt="Schematic Reprsentation" src="https://github.com/user-attachments/assets/83d68d4d-4107-4388-82ad-c7e209d01d22" />
 
-
+<centre>Figure : Simulation Studies and Real Data Case Studies using Approximate Bayesian Computation in Julia.</centre> 
 
 ---
 
