@@ -69,12 +69,14 @@ a0_posterior_mean = mean(sim_result.population[:,1])
 quantile(sim_result.population[:,1], [2.5 , 97.5] ./100) 
 
 NStar_0_posterior_mean = mean(sim_result.population[:,2])
-
 # 95% credible interval for parameter Nstar0 from the posterior samples
 quantile(sim_result.population[:,2], [2.5 , 97.5] ./100) 
 
-N0_posterior_mean = mean(sim_result.population[:,4])
+C_posterior_mean  =  mean(sim_result.population[:,3])
+# 95% credible interval for parameter c from the posterior samples
+quantile(sim_result.population[:,3], [2.5 , 97.5] ./100)
 
+N0_posterior_mean = mean(sim_result.population[:,4])
 # 95% credible interval for parameter U0 from the posterior samples
 quantile(sim_result.population[:,4], [2.5 , 97.5] ./100) 
 
