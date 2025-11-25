@@ -42,8 +42,15 @@ for i in 1:iterations
 end
 
 mean(post_mu)  # mean of posterior mean
+median(post_mu) # median of posterior mean
+mode(post_mu)   # mode of posterior mean
+quantile(post_mu , [2.5, 97.5] ./100)  # 95% CI
+
 
 mean(post_sigma) # mean of posterior sigma
+median(post_sigma)  # median of posterior sigma
+mode(post_sigma)   # mode of posterior sigma
+quantile(post_sigma , [2.5, 97.5] ./100) # 95% CI
 
 length(post_mu)  # number of accepted values
 length(post_sigma) # number of accepted values
