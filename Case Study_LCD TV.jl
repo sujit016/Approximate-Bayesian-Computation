@@ -97,7 +97,7 @@ quantile(sim_result.population[:,2], [2.5 , 97.5] ./100)
 posterior_samples = sim_result.population  # This is likely a matrix
 
 # DataFrame with named columns
-df = DataFrame(r = posterior_samples[:, 1], alpha = posterior_samples[:, 2])
+df = DataFrame(r = posterior_samples[:, 1], α = posterior_samples[:, 2])
 
 vars = [:r, :α]
 labels = [L"r", L"\alpha"]
