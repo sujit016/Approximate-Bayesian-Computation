@@ -6,7 +6,6 @@
 # load the required packages 
 using GpABC, Distributions, Plots, StatsBase
 using LaTeXStrings
-using PairPlots
 using DataFrames
 using StatsPlots, CairoMakie
 using Random
