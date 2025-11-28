@@ -6,7 +6,7 @@ using StatsBase
 using Plots
 using LaTeXStrings
 
-Random.seed!(123)  # for reproducibility
+Random.seed!(123)   # for reproducibility
 
 # True parameter values
 r_true = 0.6
@@ -77,17 +77,18 @@ plt = plot(layout = (1, 2), size = (700, 400))
 
 p1 = histogram!(post_r, normalize = true, xlabel = L"r", ylabel = "density",
     label = "", color = "lightgrey", title = "Posterior Distribution of r",subplot = 1)
-scatter!([r_true], [0.0], color = "red", label = L"r_{true}", markersize = 10,
+scatter!([r_true], [0.0], color = "red", label = "true value", markersize = 10,
     subplot = 1)
-scatter!([mean(post_r)], [0.0], color = "blue", label = L"r_{posterior}", markersize = 10,
+scatter!([mean(post_r)], [0.0], color = "blue", label = "posterior mean", markersize = 10,
     subplot= 1)
 
 p2 = histogram!(post_K, normalize = true, xlabel = L"K", ylabel = "density", 
     label = "", color = "lightgrey", title = "Posterior Distribution of K" ,subplot= 2)
-scatter!([K_true], [0.0], color = "red", label = L"K_{true}", markersize = 10, 
+scatter!([K_true], [0.0], color = "red", label = "true value", markersize = 10, 
  subplot= 2)
-scatter!([mean(post_K)], [0.0], color = "blue" , label = L"K_{posterior}",  markersize = 10,
+scatter!([mean(post_K)], [0.0], color = "blue" , label = "posterior mean",  markersize = 10,
  subplot= 2)
+
 
 # fitted curve vs data
 fitted_vals = zeros(length(N_obs))
