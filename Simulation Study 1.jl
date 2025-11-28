@@ -1,7 +1,7 @@
 # load the required packages
 using Random, Distributions, Statistics, StatsBase
 using Plots, LaTeXStrings
-
+using KernelDensity
 Random.seed!(123)  # for reproducibility
 
 # true prameters
@@ -58,14 +58,14 @@ length(post_sigma) # number of accepted values
 p1 = histogram(post_mu, normalize = true, ylims = (0, 3.5), xlabel = L"\mu",
 ylabel = "density", label = "")
 scatter!([mu_true],[0], color = "blue", markersize = 10, 
-    label = L"\mu_{true}")
+    label = "true value")
 scatter!([mean(post_mu)],[0], color = "red", markersize = 10, 
-    label = L"\mu_{posterior}" )
+    label = "posterior mean")
 
 p2 = histogram(post_sigma, normalize = true, ylims = (0, 3.5), xlabel = L"\sigma", 
 ylabel = "density", label = "")
 scatter!([sigma_true],[0], color = "blue", markersize = 10, 
-    label = L"\sigma_{ture}")
+    label = "true value")
 scatter!([mean(post_sigma)],[0], color = "red", markersize = 10, 
-    label = L"\sigma_{posterior}" )
+    label = "posterior mean" )
 plt = plot(p1, p2, layout = (1,2), size = (700, 400))
