@@ -1,10 +1,11 @@
  # Approximate Bayesian Computation
- ##### <center>Sujit Sandipan Chaugule<sup>1</sup>, Dr. Amiya Ranjan Bhowmick<sup>2</sup></center>, <center>Dipali Vasudev Mestry<sup>2</sup>
+ ##### <center>Sujit Sandipan Chaugule<sup>1</sup>, Dr. Amiya Ranjan Bhowmick<sup>2</sup></center>, <center>Dipali Vasudev Mestry<sup>2</sup>, <center>Manan Rawat<sup>2</sup>
 
 <div style="text-align: justify;">
-<sup>1</sup>Department of Pharmaceutical Sciences and Technology, Institute of Chemical Technology, Mumbai
+<sup>1</sup>Institute of Chemical Technology, Mumbai  
+</div>
 
-<sup>2</sup>Department of Mathematics, Institute of Chemical Technology, Mumbai  
+<sup>2</sup>School of Mathematical Sciences, University of Mumbai - Department of Atomic Energy Centre for Excellence in Basic Sciences, Santacruz (East), Mumbai, 400098, Maharashtra, India.7
 </div>
 
 ---
