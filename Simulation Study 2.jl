@@ -72,23 +72,18 @@ plt = histogram(dist_arr, normalize = true,
     xlabel = L"d(N_{sim}, N_{obs})", title = L"\epsilon = 50",ylabel = "density", 
     label = "", color = "lightblue")
 
-# Plot posterior distributions
-plt = plot(layout = (1, 2), size = (700, 400))
+p1 = histogram(post_r, normalize = true, xlabel = L"r", ylabel = "density",
+    label = "", color = "lightgrey", title = "Posterior Distribution of r"
+    ,bins = 30)
+scatter!([r_true], [0.0], color = "red", label = "true value", markersize = 12)
+scatter!([mean(post_r)], [0.0], color = "blue", label = "posterior mean", 
+    markersize = 8)
 
-p1 = histogram!(post_r, normalize = true, xlabel = L"r", ylabel = "density",
-    label = "", color = "lightgrey", title = "Posterior Distribution of r",subplot = 1)
-scatter!([r_true], [0.0], color = "red", label = "true value", markersize = 10,
-    subplot = 1)
-scatter!([mean(post_r)], [0.0], color = "blue", label = "posterior mean", markersize = 10,
-    subplot= 1)
-
-p2 = histogram!(post_K, normalize = true, xlabel = L"K", ylabel = "density", 
-    label = "", color = "lightgrey", title = "Posterior Distribution of K" ,subplot= 2)
-scatter!([K_true], [0.0], color = "red", label = "true value", markersize = 10, 
- subplot= 2)
-scatter!([mean(post_K)], [0.0], color = "blue" , label = "posterior mean",  markersize = 10,
- subplot= 2)
-
+p2 = histogram(post_K, normalize = true, xlabel = L"K", ylabel = "density", 
+    label = "", color = "lightgrey", title = "Posterior Distribution of K", 
+    bins = 30)
+scatter!([K_true], [0.0], color = "red", label = "true value", markersize = 10)
+scatter!([mean(post_K)], [0.0], color = "blue" , label = "posterior mean",  markersize = 10)
 
 # fitted curve vs data
 fitted_vals = zeros(length(N_obs))
