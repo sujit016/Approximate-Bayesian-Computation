@@ -73,15 +73,13 @@ plt = histogram(dist_arr, normalize = true,
     label = "", color = "lightblue")
 
 p1 = histogram(post_r, normalize = true, xlabel = L"r", ylabel = "density",
-    label = "", color = "lightgrey", title = "Posterior Distribution of r"
-    ,bins = 30)
+    label = "", color = "lightgrey", bins = 30)
 scatter!([r_true], [0.0], color = "red", label = "true value", markersize = 12)
 scatter!([mean(post_r)], [0.0], color = "blue", label = "posterior mean", 
     markersize = 8)
 
 p2 = histogram(post_K, normalize = true, xlabel = L"K", ylabel = "density", 
-    label = "", color = "lightgrey", title = "Posterior Distribution of K", 
-    bins = 30)
+    label = "", color = "lightgrey", bins = 30)
 scatter!([K_true], [0.0], color = "red", label = "true value", markersize = 10)
 scatter!([mean(post_K)], [0.0], color = "blue" , label = "posterior mean",  markersize = 10)
 
